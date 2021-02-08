@@ -7,7 +7,7 @@ import org.openqa.selenium.support.pagefactory.AjaxElementLocatorFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class Webdriverwaits {
+public class webdriverwaits {
 	
 	
     private static final int TIMEOUT = 5;
@@ -16,21 +16,21 @@ public class Webdriverwaits {
     protected WebDriver driver;
     private WebDriverWait wait;
 
-    public  Webdriverwaits(WebDriver driver) {
+    public  webdriverwaits(WebDriver driver) {
         this.driver = driver;
         wait = new WebDriverWait(driver, TIMEOUT, POLLING);
         PageFactory.initElements(new AjaxElementLocatorFactory(driver, TIMEOUT), this);
     }
 
-    protected void waitForElementToAppear(By locator) {
+    public void waitForElementToAppear(By locator) {
         wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
     }
 
-    protected void waitForElementToDisappear(By locator) {
+    public void waitForElementToDisappear(By locator) {
         wait.until(ExpectedConditions.invisibilityOfElementLocated(locator));
     }
 
-    protected void waitForTextToDisappear(By locator, String text) {
+    public void waitForTextToDisappear(By locator, String text) {
         wait.until(ExpectedConditions.not(ExpectedConditions.textToBe(locator, text)));
     }
 }

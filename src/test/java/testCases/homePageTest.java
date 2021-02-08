@@ -8,7 +8,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Reporter;
-
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
 
@@ -16,16 +16,18 @@ import org.testng.annotations.Test;
 
 import pageObjectModel.HomePageObjects;
 import utilities.BaseClass;
+import utilities.webdriverwaits;
 
 public class homePageTest {
 	public WebDriver driver;
 	public BaseClass base;
 	public HomePageObjects hm;
+	public webdriverwaits waits;
 	
     @BeforeMethod
     public void Initializebrowser()
     {
-    	Reporter.log("=====Browser Session Started=====", true);
+      Reporter.log("=====Browser Session Started=====", true);
       base = new BaseClass();
       driver= base.intilisebrowser();
      
@@ -33,29 +35,46 @@ public class homePageTest {
     @Test
     public void homePage() throws InterruptedException
     {
-    	 driver.get("https://www.goibibo.com/");
+    	driver.get("https://www.goibibo.com/");
     	hm = new HomePageObjects(driver);
     	Actions a = new Actions(driver);
     	a.moveToElement(hm.from()).click().sendKeys("Tirupati").perform();
-    	List<WebElement> values = driver.findElements(By.xpath("//div/ul/li"));
+    	
+    	waits = new webdriverwaits(driver);
+    	waits.waitForElementToAppear(By.xpath("//ul[@id='react-autosuggest-1']"));
+    	
+    	List<WebElement> cities = driver.findElements(By.xpath("//ul[@id='react-autosuggest-1']/li"));
     	Thread.sleep(2000);
-    	for(WebElement value : values)
+    	for(WebElement eachcity : cities)
     	{
-    		String v = value.getText();
-    		System.out.println(v);
     		
+    		String city = eachcity.getText().split(",")[0].trim();
+    		
+			System.out.println(city);
+			  if (city.equalsIgnoreCase("Tirupati")) {
+			  
+			  eachcity.click(); break;
+			  
+			  
+			  }
+			 
     		
     	}
+    	
     	
   
     }
     
     
     
-	/*
-	 * @AfterSuite public void closeApplication() { driver.close();
-	 * Reporter.log("=====Browser Session End=====", true); }
-	 */
+	
+	  @AfterSuite public void closeApplication() 
+	  { 
+      driver.close();
+	  
+	  Reporter.log("=====Browser Session End=====",true);
+	  }
+	
     
     
 }
