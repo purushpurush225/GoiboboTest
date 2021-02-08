@@ -8,23 +8,23 @@
       <![CDATA[=====Browser Session End=====]]>
     </line>
   </reporter-output>
-  <suite started-at="2021-02-08T14:15:48 IST" name="Default suite" finished-at="2021-02-08T14:15:58 IST" duration-ms="9305">
+  <suite started-at="2021-02-08T17:41:28 IST" name="Default suite" finished-at="2021-02-08T17:41:41 IST" duration-ms="13509">
     <groups>
     </groups>
-    <test started-at="2021-02-08T14:15:48 IST" name="Default test" finished-at="2021-02-08T14:15:58 IST" duration-ms="9305">
+    <test started-at="2021-02-08T17:41:28 IST" name="Default test" finished-at="2021-02-08T17:41:41 IST" duration-ms="13509">
       <class name="testCases.homePageTest">
-        <test-method is-config="true" signature="Initializebrowser()[pri:0, instance:testCases.homePageTest@6f27a732]" started-at="2021-02-08T14:15:48 IST" name="Initializebrowser" finished-at="2021-02-08T14:15:51 IST" duration-ms="2830" status="PASS">
+        <test-method is-config="true" signature="Initializebrowser()[pri:0, instance:testCases.homePageTest@6c779568]" started-at="2021-02-08T17:41:28 IST" name="Initializebrowser" finished-at="2021-02-08T17:41:30 IST" duration-ms="2093" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[=====Browser Session Started=====]]>
             </line>
           </reporter-output>
         </test-method> <!-- Initializebrowser -->
-        <test-method signature="homePage()[pri:0, instance:testCases.homePageTest@6f27a732]" started-at="2021-02-08T14:15:51 IST" name="homePage" finished-at="2021-02-08T14:15:58 IST" duration-ms="6434" status="PASS">
+        <test-method signature="homePage()[pri:0, instance:testCases.homePageTest@6c779568]" started-at="2021-02-08T17:41:30 IST" name="homePage" finished-at="2021-02-08T17:41:37 IST" duration-ms="7245" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homePage -->
-        <test-method is-config="true" signature="closeApplication()[pri:0, instance:testCases.homePageTest@6f27a732]" started-at="2021-02-08T14:15:58 IST" name="closeApplication" finished-at="2021-02-08T14:15:58 IST" duration-ms="222" status="PASS">
+        <test-method is-config="true" signature="closeApplication()[pri:0, instance:testCases.homePageTest@6c779568]" started-at="2021-02-08T17:41:37 IST" name="closeApplication" finished-at="2021-02-08T17:41:41 IST" duration-ms="4140" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[=====Browser Session End=====]]>

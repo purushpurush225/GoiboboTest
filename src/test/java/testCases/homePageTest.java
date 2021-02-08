@@ -3,19 +3,16 @@ package testCases;
 import java.util.List;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.testng.Reporter;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
-
 import org.testng.annotations.Test;
-
 import pageObjectModel.HomePageObjects;
 import utilities.BaseClass;
+import utilities.UserDefineMethods;
 import utilities.webdriverwaits;
 
 public class homePageTest {
@@ -23,6 +20,7 @@ public class homePageTest {
 	public BaseClass base;
 	public HomePageObjects hm;
 	public webdriverwaits waits;
+	public UserDefineMethods methods;
 
 	@BeforeMethod
 	public void Initializebrowser() {
@@ -34,35 +32,47 @@ public class homePageTest {
 
 	@Test
 	public void homePage() throws InterruptedException {
+
 		driver.get("https://www.goibibo.com/");
 		hm = new HomePageObjects(driver);
-		Actions a = new Actions(driver);
-		a.moveToElement(hm.from()).click().sendKeys("Tirupati").perform();
+		hm.from().sendKeys("bengaluru");
 
 		waits = new webdriverwaits(driver);
-		waits.waitForElementToAppear(hm.citieslocator());
+		waits.waitForElementToAppear(hm.fromlocator());
 
-		List<WebElement> cities = hm.cities();
+		List<WebElement> Fromcities = hm.fromcities();
+		methods = new UserDefineMethods();
+		WebElement from = methods.City(Fromcities, "bengaluru");
+		from.click();
 
-		for (WebElement eachcity : cities) {
+		hm.departure().sendKeys("hyd");
+		waits.waitForElementToAppear(hm.departurelocator());
 
-			String city = eachcity.getText().split(",")[0].trim();
-			
-			if (city.equalsIgnoreCase("Tirupati")) 
-			{
-			    eachcity.click();
-				break;
-			}
+		List<WebElement> Departurecities = hm.departurecities();
 
-		}
+		WebElement departure = methods.City(Departurecities, "hyderabad");
+		departure.click();
+
+		waits.waitForElementToAppear(hm.fromdatelocator());
+		List<WebElement> frmdays = hm.fromdate();
+
+		WebElement datefrom = methods.date(frmdays, "16");
+		datefrom.click();
+
+		hm.travellers().click();
+		// for Two adultPassengers+1 children + 1 infant
+		hm.Adults().click();
+		hm.children().click();
+		hm.infant().click();
+		hm.Search().click();
 
 	}
 
-	@AfterSuite
-	public void closeApplication() {
-		driver.close();
-
-		Reporter.log("=====Browser Session End=====", true);
-	}
-
+	
+	  @AfterMethod 
+	  public void closeApplication() 
+	  {
+	  driver.close();
+	  Reporter.log("=====Browser Session End=====", true); }
+	 
 }
