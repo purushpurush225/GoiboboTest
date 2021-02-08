@@ -23,58 +23,46 @@ public class homePageTest {
 	public BaseClass base;
 	public HomePageObjects hm;
 	public webdriverwaits waits;
-	
-    @BeforeMethod
-    public void Initializebrowser()
-    {
-      Reporter.log("=====Browser Session Started=====", true);
-      base = new BaseClass();
-      driver= base.intilisebrowser();
-     
-    }
-    @Test
-    public void homePage() throws InterruptedException
-    {
-    	driver.get("https://www.goibibo.com/");
-    	hm = new HomePageObjects(driver);
-    	Actions a = new Actions(driver);
-    	a.moveToElement(hm.from()).click().sendKeys("Tirupati").perform();
-    	
-    	waits = new webdriverwaits(driver);
-    	waits.waitForElementToAppear(By.xpath("//ul[@id='react-autosuggest-1']"));
-    	
-    	List<WebElement> cities = driver.findElements(By.xpath("//ul[@id='react-autosuggest-1']/li"));
-    	Thread.sleep(2000);
-    	for(WebElement eachcity : cities)
-    	{
-    		
-    		String city = eachcity.getText().split(",")[0].trim();
-    		
-			System.out.println(city);
-			  if (city.equalsIgnoreCase("Tirupati")) {
-			  
-			  eachcity.click(); break;
-			  
-			  
-			  }
-			 
-    		
-    	}
-    	
-    	
-  
-    }
-    
-    
-    
-	
-	  @AfterSuite public void closeApplication() 
-	  { 
-      driver.close();
-	  
-	  Reporter.log("=====Browser Session End=====",true);
-	  }
-	
-    
-    
+
+	@BeforeMethod
+	public void Initializebrowser() {
+		Reporter.log("=====Browser Session Started=====", true);
+		base = new BaseClass();
+		driver = base.intilisebrowser();
+
+	}
+
+	@Test
+	public void homePage() throws InterruptedException {
+		driver.get("https://www.goibibo.com/");
+		hm = new HomePageObjects(driver);
+		Actions a = new Actions(driver);
+		a.moveToElement(hm.from()).click().sendKeys("Tirupati").perform();
+
+		waits = new webdriverwaits(driver);
+		waits.waitForElementToAppear(hm.citieslocator());
+
+		List<WebElement> cities = hm.cities();
+
+		for (WebElement eachcity : cities) {
+
+			String city = eachcity.getText().split(",")[0].trim();
+			
+			if (city.equalsIgnoreCase("Tirupati")) 
+			{
+			    eachcity.click();
+				break;
+			}
+
+		}
+
+	}
+
+	@AfterSuite
+	public void closeApplication() {
+		driver.close();
+
+		Reporter.log("=====Browser Session End=====", true);
+	}
+
 }
