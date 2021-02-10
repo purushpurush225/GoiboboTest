@@ -6,7 +6,10 @@
       <class name="testCases.homePageTest">
         <methods>
           <include name="homePage"/>
+          <include name="closeApplication"/>
           <include name="Initializebrowser"/>
+          <include name="footerlinks"/>
+          <include name="uitest"/>
         </methods>
       </class> <!-- testCases.homePageTest -->
     </classes>

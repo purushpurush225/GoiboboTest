@@ -11,6 +11,7 @@ public class UserDefineMethods {
 	for (WebElement eachcity : cities) {
 
 		String city = eachcity.getText().split(",")[0].trim();
+		//System.out.println(city);
 		
 		if (city.equalsIgnoreCase(cityname)) 
 		{
@@ -19,7 +20,7 @@ public class UserDefineMethods {
 		 }
 	
 	}
-	System.out.println("city is not visible");
+	//System.out.println("city is not visible");
 	return null;
 	
 }
@@ -30,9 +31,12 @@ public class UserDefineMethods {
 	for (WebElement day : days) {
 
 		String getdate = day.getText().trim().toString();
+		System.out.println(getdate);
 		
 		if (getdate.equalsIgnoreCase(date)) 
+		
 		{
+			
 		    return day;
 		   
 		 }

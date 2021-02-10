@@ -17,20 +17,17 @@ public class HomePageObjects
 	}
 	
 	private By from = By.id("gosuggest_inputSrc");
-	private By departure = By.id("gosuggest_inputDest");
-	private By fromlocator = By.xpath("//ul[@id='react-autosuggest-1']");
+	private By departure = By.xpath("//input[@id='gosuggest_inputDest']");
 	private By  fromcities=    By.xpath("//ul[@id='react-autosuggest-1']/li");
-	private By departurelocator = By.xpath("//ul[@id='react-autosuggest-1']");
 	private By  departurecities=    By.xpath("//ul[@id='react-autosuggest-1']/li");
-	private By fromdatelocator = By.cssSelector(".DayPicker-Day");
+	private By fromday = By.xpath("//div[@class='DayPicker-Day']");
 	private By fromdate = By.xpath("//div[@class ='DayPicker-Day']/div");
 	private By travellers = By.id("pax_link_common");
 	private By Adults = By.id("adultPaxPlus");
 	private By children = By.id("childPaxPlus");
 	private By infant = By.id("infantPaxPlus");
 	private By search = By.xpath("//button[@value='Search']");
-	
-	
+    
 	
 	
 	public WebElement from()
@@ -38,12 +35,6 @@ public class HomePageObjects
 		return driver.findElement(from);
 	}
 	
-	public By fromlocator() 
-	
-	{
-		return fromlocator;
-		
-	}
 	
 	public List<WebElement> fromcities()
 	{
@@ -55,20 +46,13 @@ public class HomePageObjects
 		return driver.findElement(departure);
 	}
 	
-public By departurelocator() 
-	
-	{
-		return departurelocator;
-		
-	}
-	
 	public List<WebElement> departurecities()
 	{
 		return  driver.findElements(departurecities);
 	}
-	public By fromdatelocator()
+	public WebElement fromday()
 	{
-		return fromdatelocator;
+		return driver.findElement(fromday);
 	}
 	
 	public List<WebElement> fromdate()
