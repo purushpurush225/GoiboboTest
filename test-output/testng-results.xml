@@ -20,7 +20,7 @@
       <![CDATA[=====Browser Session End=====]]>
     </line>
   </reporter-output>
-  <suite started-at="2021-02-09T19:56:09 IST" name="Default suite" finished-at="2021-02-09T19:56:46 IST" duration-ms="36831">
+  <suite started-at="2021-02-10T18:01:18 IST" name="Default suite" finished-at="2021-02-10T18:02:02 IST" duration-ms="43976">
     <groups>
       <group name="FuntionalTest">
         <method signature="homePageTest.footerlinks()[pri:1, instance:testCases.homePageTest@2cdd0d4b]" name="footerlinks" class="testCases.homePageTest"/>
@@ -30,56 +30,56 @@
         <method signature="homePageTest.uitest()[pri:0, instance:testCases.homePageTest@2cdd0d4b]" name="uitest" class="testCases.homePageTest"/>
       </group> <!-- UITest -->
     </groups>
-    <test started-at="2021-02-09T19:56:09 IST" name="Default test" finished-at="2021-02-09T19:56:46 IST" duration-ms="36831">
+    <test started-at="2021-02-10T18:01:18 IST" name="Default test" finished-at="2021-02-10T18:02:02 IST" duration-ms="43976">
       <class name="testCases.homePageTest">
-        <test-method is-config="true" signature="Initializebrowser()[pri:0, instance:testCases.homePageTest@2cdd0d4b]" started-at="2021-02-09T19:56:09 IST" name="Initializebrowser" finished-at="2021-02-09T19:56:11 IST" duration-ms="1855" status="PASS">
+        <test-method is-config="true" signature="Initializebrowser()[pri:0, instance:testCases.homePageTest@2cdd0d4b]" started-at="2021-02-10T18:01:18 IST" name="Initializebrowser" finished-at="2021-02-10T18:01:24 IST" duration-ms="5959" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[=====Browser Session Started=====]]>
             </line>
           </reporter-output>
         </test-method> <!-- Initializebrowser -->
-        <test-method signature="homePage()[pri:0, instance:testCases.homePageTest@2cdd0d4b]" started-at="2021-02-09T19:56:11 IST" name="homePage" finished-at="2021-02-09T19:56:22 IST" duration-ms="11355" status="PASS">
+        <test-method signature="homePage()[pri:0, instance:testCases.homePageTest@2cdd0d4b]" started-at="2021-02-10T18:01:24 IST" name="homePage" finished-at="2021-02-10T18:01:33 IST" duration-ms="8791" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homePage -->
-        <test-method is-config="true" signature="closeApplication()[pri:0, instance:testCases.homePageTest@2cdd0d4b]" started-at="2021-02-09T19:56:22 IST" name="closeApplication" finished-at="2021-02-09T19:56:23 IST" duration-ms="216" status="PASS">
+        <test-method is-config="true" signature="closeApplication()[pri:0, instance:testCases.homePageTest@2cdd0d4b]" started-at="2021-02-10T18:01:33 IST" name="closeApplication" finished-at="2021-02-10T18:01:33 IST" duration-ms="289" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[=====Browser Session End=====]]>
             </line>
           </reporter-output>
         </test-method> <!-- closeApplication -->
-        <test-method is-config="true" signature="Initializebrowser()[pri:0, instance:testCases.homePageTest@2cdd0d4b]" started-at="2021-02-09T19:56:23 IST" name="Initializebrowser" finished-at="2021-02-09T19:56:24 IST" duration-ms="1614" status="PASS">
+        <test-method is-config="true" signature="Initializebrowser()[pri:0, instance:testCases.homePageTest@2cdd0d4b]" started-at="2021-02-10T18:01:33 IST" name="Initializebrowser" finished-at="2021-02-10T18:01:35 IST" duration-ms="1497" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[=====Browser Session Started=====]]>
             </line>
           </reporter-output>
         </test-method> <!-- Initializebrowser -->
-        <test-method signature="uitest()[pri:0, instance:testCases.homePageTest@2cdd0d4b]" started-at="2021-02-09T19:56:24 IST" name="uitest" finished-at="2021-02-09T19:56:32 IST" duration-ms="7452" status="PASS">
+        <test-method signature="uitest()[pri:0, instance:testCases.homePageTest@2cdd0d4b]" started-at="2021-02-10T18:01:35 IST" name="uitest" finished-at="2021-02-10T18:01:41 IST" duration-ms="6877" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- uitest -->
-        <test-method is-config="true" signature="closeApplication()[pri:0, instance:testCases.homePageTest@2cdd0d4b]" started-at="2021-02-09T19:56:32 IST" name="closeApplication" finished-at="2021-02-09T19:56:32 IST" duration-ms="233" status="PASS">
+        <test-method is-config="true" signature="closeApplication()[pri:0, instance:testCases.homePageTest@2cdd0d4b]" started-at="2021-02-10T18:01:41 IST" name="closeApplication" finished-at="2021-02-10T18:01:46 IST" duration-ms="4132" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[=====Browser Session End=====]]>
             </line>
           </reporter-output>
         </test-method> <!-- closeApplication -->
-        <test-method is-config="true" signature="Initializebrowser()[pri:0, instance:testCases.homePageTest@2cdd0d4b]" started-at="2021-02-09T19:56:32 IST" name="Initializebrowser" finished-at="2021-02-09T19:56:33 IST" duration-ms="1442" status="PASS">
+        <test-method is-config="true" signature="Initializebrowser()[pri:0, instance:testCases.homePageTest@2cdd0d4b]" started-at="2021-02-10T18:01:46 IST" name="Initializebrowser" finished-at="2021-02-10T18:01:47 IST" duration-ms="1439" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[=====Browser Session Started=====]]>
             </line>
           </reporter-output>
         </test-method> <!-- Initializebrowser -->
-        <test-method signature="footerlinks()[pri:1, instance:testCases.homePageTest@2cdd0d4b]" started-at="2021-02-09T19:56:33 IST" name="footerlinks" finished-at="2021-02-09T19:56:46 IST" duration-ms="12465" status="PASS">
+        <test-method signature="footerlinks()[pri:1, instance:testCases.homePageTest@2cdd0d4b]" started-at="2021-02-10T18:01:47 IST" name="footerlinks" finished-at="2021-02-10T18:02:02 IST" duration-ms="14746" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- footerlinks -->
-        <test-method is-config="true" signature="closeApplication()[pri:0, instance:testCases.homePageTest@2cdd0d4b]" started-at="2021-02-09T19:56:46 IST" name="closeApplication" finished-at="2021-02-09T19:56:46 IST" duration-ms="160" status="PASS">
+        <test-method is-config="true" signature="closeApplication()[pri:0, instance:testCases.homePageTest@2cdd0d4b]" started-at="2021-02-10T18:02:02 IST" name="closeApplication" finished-at="2021-02-10T18:02:02 IST" duration-ms="200" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[=====Browser Session End=====]]>
