@@ -37,6 +37,7 @@ public class homePageTest {
 	@BeforeMethod
 	public void Initializebrowser() {
 		Reporter.log("=====Browser Session Started=====", true);
+		///
 		base = new BaseClass();
 		driver = base.intilisebrowser();
 
