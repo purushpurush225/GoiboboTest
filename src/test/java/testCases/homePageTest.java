@@ -91,6 +91,7 @@ public class homePageTest {
 	
 	@Test(groups = { "UITest" }) 
 	public void uitest() {
+		////
 	  driver.get("https://www.goibibo.com/"); 
 	  String color = driver.findElement(By.xpath("//a[text()='Explore All Offers']")).getCssValue("color"); 
 	  String hexcolor = Color.fromString(color).asHex(); // convertedIntoHexFormat 
