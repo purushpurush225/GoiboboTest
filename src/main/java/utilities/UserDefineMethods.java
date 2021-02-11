@@ -32,7 +32,7 @@ public class UserDefineMethods {
 
 		String getdate = day.getText().trim().toString();
 		
-		System.out.println(getdate);
+		//System.out.println(getdate);
 		
 		if (getdate.contains(date)) 
 		

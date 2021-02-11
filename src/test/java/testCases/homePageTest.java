@@ -80,28 +80,32 @@ public class homePageTest {
 		hm.children().click();
 		hm.infant().click();
 		hm.Search().click();
-		System.out.println(driver.getTitle());
+		
+		Reporter.log("====checking the flight booking button is enabled or not", true);
 		waits.waitForElementClickable(hm.bookfirstflight());
 		boolean bo = (hm.bookfirstflight()).isEnabled();
 		boolean ko = true;
 
-		Assert.assertEquals(bo, ko);
+		Assert.assertEquals(bo, ko,"first flight booking button is not enabled");
+		Reporter.log("====flight booking button is enabled ", true);
 
 	}
 
 	@Test(groups = { "UITest" })
 	public void uitest() {
-		////
+		Reporter.log("====checking the color of 'Explore All Offers button' in the home page as per specifications or not", true);
 		driver.get("https://www.goibibo.com/");
 		String color = driver.findElement(By.xpath("//a[text()='Explore All Offers']")).getCssValue("color");
 		String hexcolor = Color.fromString(color).asHex(); // convertedIntoHexFormat
 		String expected = "#ffffff";
 		assertEquals(expected, hexcolor);
+		Reporter.log("====The color of 'Explore All Offers button' in the home page is as per specification", true);
 
 	}
 
 	@Test(groups = { "FuntionalTest" }, priority = 1)
 	public void footerlinks() {
+		Reporter.log("====checking the footer links are broken or not", true);
 		String url = "";
 		String homePage = "https://www.goibibo.com/";
 		HttpURLConnection huc = null;

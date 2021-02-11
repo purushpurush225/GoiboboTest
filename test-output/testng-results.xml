@@ -5,22 +5,37 @@
       <![CDATA[=====Browser Session Started=====]]>
     </line>
     <line>
+      <![CDATA[====checking the flight booking button is enabled or not]]>
+    </line>
+    <line>
+      <![CDATA[====checking the flight booking button is enabled ]]>
+    </line>
+    <line>
       <![CDATA[=====Browser Session End=====]]>
     </line>
     <line>
       <![CDATA[=====Browser Session Started=====]]>
     </line>
     <line>
+      <![CDATA[====checking the color of 'Explore All Offers button' in the home page as per specifications or not]]>
+    </line>
+    <line>
+      <![CDATA[====The color of 'Explore All Offers button' in the home page is as per verificaton]]>
+    </line>
+    <line>
       <![CDATA[=====Browser Session End=====]]>
     </line>
     <line>
       <![CDATA[=====Browser Session Started=====]]>
+    </line>
+    <line>
+      <![CDATA[====checking the footer links are broken or not]]>
     </line>
     <line>
       <![CDATA[=====Browser Session End=====]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="46813" started-at="2021-02-11T19:29:20 IST" finished-at="2021-02-11T19:30:07 IST">
+  <suite name="Default suite" duration-ms="46597" started-at="2021-02-11T19:45:18 IST" finished-at="2021-02-11T19:46:05 IST">
     <groups>
       <group name="FuntionalTest">
         <method signature="homePageTest.footerlinks()[pri:1, instance:testCases.homePageTest@6737fd8f]" name="footerlinks" class="testCases.homePageTest"/>
@@ -30,56 +45,71 @@
         <method signature="homePageTest.uitest()[pri:0, instance:testCases.homePageTest@6737fd8f]" name="uitest" class="testCases.homePageTest"/>
       </group> <!-- UITest -->
     </groups>
-    <test name="Default test" duration-ms="46813" started-at="2021-02-11T19:29:20 IST" finished-at="2021-02-11T19:30:07 IST">
+    <test name="Default test" duration-ms="46597" started-at="2021-02-11T19:45:18 IST" finished-at="2021-02-11T19:46:05 IST">
       <class name="testCases.homePageTest">
-        <test-method status="PASS" signature="Initializebrowser()[pri:0, instance:testCases.homePageTest@6737fd8f]" name="Initializebrowser" is-config="true" duration-ms="3390" started-at="2021-02-11T19:29:20 IST" finished-at="2021-02-11T19:29:24 IST">
+        <test-method status="PASS" signature="Initializebrowser()[pri:0, instance:testCases.homePageTest@6737fd8f]" name="Initializebrowser" is-config="true" duration-ms="3347" started-at="2021-02-11T19:45:18 IST" finished-at="2021-02-11T19:45:22 IST">
           <reporter-output>
             <line>
               <![CDATA[=====Browser Session Started=====]]>
             </line>
           </reporter-output>
         </test-method> <!-- Initializebrowser -->
-        <test-method status="PASS" signature="homePage()[pri:0, instance:testCases.homePageTest@6737fd8f]" name="homePage" duration-ms="17886" started-at="2021-02-11T19:29:24 IST" finished-at="2021-02-11T19:29:42 IST">
+        <test-method status="PASS" signature="homePage()[pri:0, instance:testCases.homePageTest@6737fd8f]" name="homePage" duration-ms="15076" started-at="2021-02-11T19:45:22 IST" finished-at="2021-02-11T19:45:37 IST">
           <reporter-output>
+            <line>
+              <![CDATA[====checking the flight booking button is enabled or not]]>
+            </line>
+            <line>
+              <![CDATA[====checking the flight booking button is enabled ]]>
+            </line>
           </reporter-output>
         </test-method> <!-- homePage -->
-        <test-method status="PASS" signature="closeApplication()[pri:0, instance:testCases.homePageTest@6737fd8f]" name="closeApplication" is-config="true" duration-ms="261" started-at="2021-02-11T19:29:42 IST" finished-at="2021-02-11T19:29:42 IST">
+        <test-method status="PASS" signature="closeApplication()[pri:0, instance:testCases.homePageTest@6737fd8f]" name="closeApplication" is-config="true" duration-ms="221" started-at="2021-02-11T19:45:37 IST" finished-at="2021-02-11T19:45:37 IST">
           <reporter-output>
             <line>
               <![CDATA[=====Browser Session End=====]]>
             </line>
           </reporter-output>
         </test-method> <!-- closeApplication -->
-        <test-method status="PASS" signature="Initializebrowser()[pri:0, instance:testCases.homePageTest@6737fd8f]" name="Initializebrowser" is-config="true" duration-ms="1688" started-at="2021-02-11T19:29:42 IST" finished-at="2021-02-11T19:29:44 IST">
+        <test-method status="PASS" signature="Initializebrowser()[pri:0, instance:testCases.homePageTest@6737fd8f]" name="Initializebrowser" is-config="true" duration-ms="1956" started-at="2021-02-11T19:45:37 IST" finished-at="2021-02-11T19:45:39 IST">
           <reporter-output>
             <line>
               <![CDATA[=====Browser Session Started=====]]>
             </line>
           </reporter-output>
         </test-method> <!-- Initializebrowser -->
-        <test-method status="PASS" signature="uitest()[pri:0, instance:testCases.homePageTest@6737fd8f]" name="uitest" duration-ms="7422" started-at="2021-02-11T19:29:44 IST" finished-at="2021-02-11T19:29:51 IST">
+        <test-method status="PASS" signature="uitest()[pri:0, instance:testCases.homePageTest@6737fd8f]" name="uitest" duration-ms="10931" started-at="2021-02-11T19:45:39 IST" finished-at="2021-02-11T19:45:50 IST">
           <reporter-output>
+            <line>
+              <![CDATA[====checking the color of 'Explore All Offers button' in the home page as per specifications or not]]>
+            </line>
+            <line>
+              <![CDATA[====The color of 'Explore All Offers button' in the home page is as per verificaton]]>
+            </line>
           </reporter-output>
         </test-method> <!-- uitest -->
-        <test-method status="PASS" signature="closeApplication()[pri:0, instance:testCases.homePageTest@6737fd8f]" name="closeApplication" is-config="true" duration-ms="338" started-at="2021-02-11T19:29:51 IST" finished-at="2021-02-11T19:29:51 IST">
+        <test-method status="PASS" signature="closeApplication()[pri:0, instance:testCases.homePageTest@6737fd8f]" name="closeApplication" is-config="true" duration-ms="262" started-at="2021-02-11T19:45:50 IST" finished-at="2021-02-11T19:45:50 IST">
           <reporter-output>
             <line>
               <![CDATA[=====Browser Session End=====]]>
             </line>
           </reporter-output>
         </test-method> <!-- closeApplication -->
-        <test-method status="PASS" signature="Initializebrowser()[pri:0, instance:testCases.homePageTest@6737fd8f]" name="Initializebrowser" is-config="true" duration-ms="1728" started-at="2021-02-11T19:29:51 IST" finished-at="2021-02-11T19:29:53 IST">
+        <test-method status="PASS" signature="Initializebrowser()[pri:0, instance:testCases.homePageTest@6737fd8f]" name="Initializebrowser" is-config="true" duration-ms="1794" started-at="2021-02-11T19:45:50 IST" finished-at="2021-02-11T19:45:52 IST">
           <reporter-output>
             <line>
               <![CDATA[=====Browser Session Started=====]]>
             </line>
           </reporter-output>
         </test-method> <!-- Initializebrowser -->
-        <test-method status="PASS" signature="footerlinks()[pri:1, instance:testCases.homePageTest@6737fd8f]" name="footerlinks" duration-ms="13665" started-at="2021-02-11T19:29:53 IST" finished-at="2021-02-11T19:30:07 IST">
+        <test-method status="PASS" signature="footerlinks()[pri:1, instance:testCases.homePageTest@6737fd8f]" name="footerlinks" duration-ms="12632" started-at="2021-02-11T19:45:52 IST" finished-at="2021-02-11T19:46:04 IST">
           <reporter-output>
+            <line>
+              <![CDATA[====checking the footer links are broken or not]]>
+            </line>
           </reporter-output>
         </test-method> <!-- footerlinks -->
-        <test-method status="PASS" signature="closeApplication()[pri:0, instance:testCases.homePageTest@6737fd8f]" name="closeApplication" is-config="true" duration-ms="360" started-at="2021-02-11T19:30:07 IST" finished-at="2021-02-11T19:30:07 IST">
+        <test-method status="PASS" signature="closeApplication()[pri:0, instance:testCases.homePageTest@6737fd8f]" name="closeApplication" is-config="true" duration-ms="302" started-at="2021-02-11T19:46:04 IST" finished-at="2021-02-11T19:46:05 IST">
           <reporter-output>
             <line>
               <![CDATA[=====Browser Session End=====]]>
