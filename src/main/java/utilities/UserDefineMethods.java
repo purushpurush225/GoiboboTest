@@ -31,9 +31,10 @@ public class UserDefineMethods {
 	for (WebElement day : days) {
 
 		String getdate = day.getText().trim().toString();
+		
 		System.out.println(getdate);
 		
-		if (getdate.equalsIgnoreCase(date)) 
+		if (getdate.contains(date)) 
 		
 		{
 			

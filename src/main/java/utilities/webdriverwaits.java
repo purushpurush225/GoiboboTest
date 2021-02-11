@@ -15,7 +15,7 @@ public class webdriverwaits {
 	
 	
     private static final int TIMEOUT = 30;
-    private static final int POLLING = 50;
+    private static final int POLLING = 100;
 
     protected WebDriver driver;
     private WebDriverWait wait;

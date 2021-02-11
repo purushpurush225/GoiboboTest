@@ -9,13 +9,12 @@ import java.net.URL;
 import java.util.Iterator;
 import java.util.List;
 
-
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.Color;
+import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.AfterMethod;
 
@@ -37,7 +36,7 @@ public class homePageTest {
 	@BeforeMethod
 	public void Initializebrowser() {
 		Reporter.log("=====Browser Session Started=====", true);
-	
+
 		base = new BaseClass();
 		driver = base.intilisebrowser();
 
@@ -62,20 +61,17 @@ public class homePageTest {
 
 		hm.departure().click();
 		hm.departure().sendKeys("hyder");
-		
 
 		List<WebElement> Departurecities = hm.departurecities();
-		
+
 		waits.waitForListofWebElementsVisible(Departurecities);
 		WebElement departurecity = methods.City(Departurecities, "hyderabad");
 		departurecity.click();
-        
 
-
-		waits.waitForElementVisible(hm.fromday());
-
+		
 		List<WebElement> frmdays = hm.fromdate();
-		WebElement datefrom = methods.date(frmdays, "16");
+		waits.waitForListofWebElementsVisible(frmdays);
+		WebElement datefrom = methods.date(frmdays, "17");
 		datefrom.click();
 
 		hm.travellers().click();
@@ -85,82 +81,82 @@ public class homePageTest {
 		hm.infant().click();
 		hm.Search().click();
 		System.out.println(driver.getTitle());
+		waits.waitForElementClickable(hm.bookfirstflight());
+		boolean bo = (hm.bookfirstflight()).isEnabled();
+		boolean ko = true;
+
+		Assert.assertEquals(bo, ko);
 
 	}
 
-	
-	@Test(groups = { "UITest" }) 
+	@Test(groups = { "UITest" })
 	public void uitest() {
 		////
-	  driver.get("https://www.goibibo.com/"); 
-	  String color = driver.findElement(By.xpath("//a[text()='Explore All Offers']")).getCssValue("color"); 
-	  String hexcolor = Color.fromString(color).asHex(); // convertedIntoHexFormat 
-	  String expected = "#ffffff"; assertEquals(expected, hexcolor);
-	  
-	  }
-	
-	
-	
-	@Test(groups= {"FuntionalTest"},priority =1)
+		driver.get("https://www.goibibo.com/");
+		String color = driver.findElement(By.xpath("//a[text()='Explore All Offers']")).getCssValue("color");
+		String hexcolor = Color.fromString(color).asHex(); // convertedIntoHexFormat
+		String expected = "#ffffff";
+		assertEquals(expected, hexcolor);
+
+	}
+
+	@Test(groups = { "FuntionalTest" }, priority = 1)
 	public void footerlinks() {
 		String url = "";
-		String homePage ="https://www.goibibo.com/";
-        HttpURLConnection huc = null;
-        int respCode = 200;
+		String homePage = "https://www.goibibo.com/";
+		HttpURLConnection huc = null;
+		int respCode = 200;
 		driver.get(homePage);
-		List<WebElement> footerlinks =driver.findElements(By.xpath("//div[@id='footer']/div[2]/div/ul/li/a"));
-		
-        Iterator<WebElement>  it = footerlinks.iterator();
-        
-         while(it.hasNext()){
-            
-            url = it.next().getAttribute("href");
-            
-            System.out.println(url);
-        
-            if(url == null || url.isEmpty()){
-             System.out.println("URL is either not configured for anchor tag or it is empty");
-                continue;
-            }
-            
-            if(!url.startsWith(homePage)){
-                System.out.println("URL belongs to another domain, skipping it.");
-                continue;
-            }
-            
-            try {
-                huc = (HttpURLConnection)(new URL(url).openConnection());
-                
-                huc.setRequestMethod("HEAD");
-                
-                huc.connect();
-                
-                respCode = huc.getResponseCode();
-                
-                if(respCode >= 400){
-                    System.out.println(url+" is a broken link");
-                }
-                else{
-                    System.out.println(url+" is a valid link");
-                }
-                    
-            } catch (MalformedURLException e) {
-                // TODO Auto-generated catch block
-                e.printStackTrace();
-            } catch (IOException e) {
-                // TODO Auto-generated catch block
-                e.printStackTrace();
-            }
-        }
-		
-		
+		List<WebElement> footerlinks = driver.findElements(By.xpath("//div[@id='footer']/div[2]/div/ul/li/a"));
+
+		Iterator<WebElement> it = footerlinks.iterator();
+
+		while (it.hasNext()) {
+
+			url = it.next().getAttribute("href");
+
+			System.out.println(url);
+
+			if (url == null || url.isEmpty()) {
+				System.out.println("URL is either not configured for anchor tag or it is empty");
+				continue;
+			}
+
+			if (!url.startsWith(homePage)) {
+				System.out.println("URL belongs to another domain, skipping it.");
+				continue;
+			}
+
+			try {
+				huc = (HttpURLConnection) (new URL(url).openConnection());
+
+				huc.setRequestMethod("HEAD");
+
+				huc.connect();
+
+				respCode = huc.getResponseCode();
+
+				if (respCode >= 400) {
+					System.out.println(url + " is a broken link");
+				} else {
+					System.out.println(url + " is a valid link");
+				}
+
+			} catch (MalformedURLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+
 	}
-	
-	
-	
-	  
-	  @AfterMethod public void closeApplication() { driver.close();
-	  Reporter.log("=====Browser Session End=====", true); }
-	 
+
+	@AfterMethod
+	public void closeApplication() {
+		driver.close();
+		Reporter.log("=====Browser Session End=====", true);
+	}
 
 }

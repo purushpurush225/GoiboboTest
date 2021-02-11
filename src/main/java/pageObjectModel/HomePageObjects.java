@@ -21,14 +21,14 @@ public class HomePageObjects
 	private By  fromcities=    By.xpath("//ul[@id='react-autosuggest-1']/li");
 	private By  departurecities=    By.xpath("//ul[@id='react-autosuggest-1']/li");
 	private By fromday = By.xpath("//div[@class='DayPicker-Day']");
-	private By fromdate = By.xpath("//div[@class ='DayPicker-Day']/div");
+	private By fromdate = By.xpath("//div[@class='calDate']");
 	private By travellers = By.id("pax_link_common");
 	private By Adults = By.id("adultPaxPlus");
 	private By children = By.id("childPaxPlus");
 	private By infant = By.id("infantPaxPlus");
 	private By search = By.xpath("//button[@value='Search']");
     
-	
+	private By bookfirstflight = By.xpath("//div[@class='marginB10']/div[1]/div/div/div/div[2]/span/span/input");
 	
 	public WebElement from()
 	{
@@ -79,5 +79,9 @@ public class HomePageObjects
    public WebElement Search()
    {
 	   return driver.findElement(search);
+   }
+   public WebElement bookfirstflight()
+   {
+	   return driver.findElement(bookfirstflight);
    }
 }
