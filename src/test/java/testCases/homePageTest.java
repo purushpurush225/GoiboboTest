@@ -97,11 +97,12 @@ public class homePageTest {
 		Reporter.log("***checking the color of 'Explore All Offers button' in the home page as per specifications or not***", true);
 		driver.get("https://www.goibibo.com/");
 		String color = driver.findElement(By.xpath("//a[text()='Explore All Offers']")).getCssValue("color");
-		String hexcolor = Color.fromString(color).asHex(); // convertedIntoHexFormat
+		// converted Into HexFormat
+		String hexcolor = Color.fromString(color).asHex(); 
 		String expected = "#ffffff";
 		SoftAssert softassert = new SoftAssert();
 		softassert.assertEquals(hexcolor, expected,"color of 'Explore All Offers button' in the home page is not as per specification");
-		
+		softassert.assertAll();
 		//assertEquals(expected, hexcolor);
 		Reporter.log("***The color of 'Explore All Offers button' in the home page is as per specification***", true);
 
