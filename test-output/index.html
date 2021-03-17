@@ -5,7 +5,8 @@
   <meta charset='utf-8'>
   <title>TestNG reports</title>
 
-    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
     <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="testng-reports.js"></script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
@@ -23,6 +24,7 @@
   <body>
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
+      <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
       <br/>
       <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
@@ -49,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\purushotham\AppData\Local\Temp\testng-eclipse--1304680534\testng-customsuite.xml</span>
+                    <span>C:\Users\purushotham\AppData\Local\Temp\testng-eclipse-1931739827\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -159,7 +161,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\purushotham\AppData\Local\Temp\testng-eclipse--1304680534\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\purushotham\AppData\Local\Temp\testng-eclipse-1931739827\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -230,22 +232,22 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'homePage')
+data.setCell(0, 1, 'footerlinks')
 data.setCell(0, 2, 'testCases.homePageTest')
-data.setCell(0, 3, 15474);
+data.setCell(0, 3, 20216);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'footerlinks')
+data.setCell(1, 1, 'homePage')
 data.setCell(1, 2, 'testCases.homePageTest')
-data.setCell(1, 3, 14218);
+data.setCell(1, 3, 15583);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'uitest')
 data.setCell(2, 2, 'testCases.homePageTest')
-data.setCell(2, 3, 8283);
+data.setCell(2, 3, 10311);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 37 seconds</span>
+              <span class="suite-total-time">Total running time: 46 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -259,21 +261,21 @@ return data;
             <div class="reporter-method-div">
               <span class="reporter-method-name">homePage</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">===checking the flight booking button is enabled or not, after selecting the first flight on a particular date===</span>
-                <span class="reporter-method-output">===flight booking button is enabled===</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">footerlinks</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">===checking the footer links are broken or not===</span>
+                <span class="reporter-method-output">***checking the flight booking button is enabled or not, after selecting the first flight on a particular date***</span>
+                <span class="reporter-method-output">***flight booking button is enabled***</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
               <span class="reporter-method-name">uitest</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">===checking the color of 'Explore All Offers button' in the home page as per specifications or not===</span>
-                <span class="reporter-method-output">===The color of 'Explore All Offers button' in the home page is as per specification===</span>
+                <span class="reporter-method-output">***checking the color of 'Explore All Offers button' in the home page as per specifications or not***</span>
+                <span class="reporter-method-output">***The color of 'Explore All Offers button' in the home page is as per specification***</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">footerlinks</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">***checking the footer links are broken or not***</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -298,39 +300,40 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">homePage</span>
-                <span class="method-start">3533 ms</span>
+                <span class="method-start">3410 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeApplication</span>
-                <span class="method-start">19013 ms</span>
+                <span class="method-start">18999 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">Initializebrowser</span>
-                <span class="method-start">19359 ms</span>
+                <span class="method-start">19410 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">uitest</span>
-                <span class="method-start">21065 ms</span>
+                <span class="method-start">21296 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeApplication</span>
-                <span class="method-start">29351 ms</span>
+                <span class="method-start">31612 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">Initializebrowser</span>
-                <span class="method-start">31522 ms</span>
+                <span class="method-start">32156 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">footerlinks</span>
-                <span class="method-start">33238 ms</span>
+                <span class="method-start">34186 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeApplication</span>
-                <span class="method-start">47459 ms</span>
+                <span class="method-start">54406 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
     </div> <!-- wrapper -->
   </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
 </html>

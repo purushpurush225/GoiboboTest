@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+<suite thread-count="3" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="methods">
+  <test thread-count="3" name="Test(failed)" parallel="methods">
     <classes>
       <class name="testCases.homePageTest">
         <methods>
@@ -9,9 +9,8 @@
           <include name="closeApplication"/>
           <include name="Initializebrowser"/>
           <include name="footerlinks"/>
-          <include name="uitest"/>
         </methods>
       </class> <!-- testCases.homePageTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
