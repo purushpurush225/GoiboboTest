@@ -5,22 +5,10 @@
       <![CDATA[=====Browser Session Started=====]]>
     </line>
     <line>
-      <![CDATA[===checking the flight booking button is enabled or not, after selecting the first flight on a particular date===]]>
+      <![CDATA[***checking the flight booking button is enabled or not, after selecting the first flight on a particular date***]]>
     </line>
     <line>
-      <![CDATA[===flight booking button is enabled===]]>
-    </line>
-    <line>
-      <![CDATA[=====Browser Session End=====]]>
-    </line>
-    <line>
-      <![CDATA[=====Browser Session Started=====]]>
-    </line>
-    <line>
-      <![CDATA[===checking the color of 'Explore All Offers button' in the home page as per specifications or not===]]>
-    </line>
-    <line>
-      <![CDATA[===The color of 'Explore All Offers button' in the home page is as per specification===]]>
+      <![CDATA[***flight booking button is enabled***]]>
     </line>
     <line>
       <![CDATA[=====Browser Session End=====]]>
@@ -29,87 +17,99 @@
       <![CDATA[=====Browser Session Started=====]]>
     </line>
     <line>
-      <![CDATA[===checking the footer links are broken or not===]]>
+      <![CDATA[***checking the color of 'Explore All Offers button' in the home page as per specifications or not***]]>
+    </line>
+    <line>
+      <![CDATA[***The color of 'Explore All Offers button' in the home page is as per specification***]]>
+    </line>
+    <line>
+      <![CDATA[=====Browser Session End=====]]>
+    </line>
+    <line>
+      <![CDATA[=====Browser Session Started=====]]>
+    </line>
+    <line>
+      <![CDATA[***checking the footer links are broken or not***]]>
     </line>
     <line>
       <![CDATA[=====Browser Session End=====]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="47663" started-at="2021-02-11T20:04:28 IST" finished-at="2021-02-11T20:05:15 IST">
+  <suite name="Default suite" duration-ms="55081" started-at="2021-02-23T18:56:49 IST" finished-at="2021-02-23T18:57:44 IST">
     <groups>
       <group name="FuntionalTest">
-        <method signature="homePageTest.footerlinks()[pri:1, instance:testCases.homePageTest@6737fd8f]" name="footerlinks" class="testCases.homePageTest"/>
-        <method signature="homePageTest.homePage()[pri:0, instance:testCases.homePageTest@6737fd8f]" name="homePage" class="testCases.homePageTest"/>
+        <method signature="homePageTest.footerlinks()[pri:1, instance:testCases.homePageTest@694e1548]" name="footerlinks" class="testCases.homePageTest"/>
+        <method signature="homePageTest.homePage()[pri:0, instance:testCases.homePageTest@694e1548]" name="homePage" class="testCases.homePageTest"/>
       </group> <!-- FuntionalTest -->
       <group name="UITest">
-        <method signature="homePageTest.uitest()[pri:0, instance:testCases.homePageTest@6737fd8f]" name="uitest" class="testCases.homePageTest"/>
+        <method signature="homePageTest.uitest()[pri:0, instance:testCases.homePageTest@694e1548]" name="uitest" class="testCases.homePageTest"/>
       </group> <!-- UITest -->
     </groups>
-    <test name="Default test" duration-ms="47663" started-at="2021-02-11T20:04:28 IST" finished-at="2021-02-11T20:05:15 IST">
+    <test name="Default test" duration-ms="55081" started-at="2021-02-23T18:56:49 IST" finished-at="2021-02-23T18:57:44 IST">
       <class name="testCases.homePageTest">
-        <test-method status="PASS" signature="Initializebrowser()[pri:0, instance:testCases.homePageTest@6737fd8f]" name="Initializebrowser" is-config="true" duration-ms="3531" started-at="2021-02-11T20:04:28 IST" finished-at="2021-02-11T20:04:31 IST">
+        <test-method status="PASS" signature="Initializebrowser()[pri:0, instance:testCases.homePageTest@694e1548]" name="Initializebrowser" is-config="true" duration-ms="3409" started-at="2021-02-23T18:56:49 IST" finished-at="2021-02-23T18:56:53 IST">
           <reporter-output>
             <line>
               <![CDATA[=====Browser Session Started=====]]>
             </line>
           </reporter-output>
         </test-method> <!-- Initializebrowser -->
-        <test-method status="PASS" signature="homePage()[pri:0, instance:testCases.homePageTest@6737fd8f]" name="homePage" duration-ms="15474" started-at="2021-02-11T20:04:31 IST" finished-at="2021-02-11T20:04:47 IST">
+        <test-method status="PASS" signature="homePage()[pri:0, instance:testCases.homePageTest@694e1548]" name="homePage" duration-ms="15583" started-at="2021-02-23T18:56:53 IST" finished-at="2021-02-23T18:57:08 IST">
           <reporter-output>
             <line>
-              <![CDATA[===checking the flight booking button is enabled or not, after selecting the first flight on a particular date===]]>
+              <![CDATA[***checking the flight booking button is enabled or not, after selecting the first flight on a particular date***]]>
             </line>
             <line>
-              <![CDATA[===flight booking button is enabled===]]>
+              <![CDATA[***flight booking button is enabled***]]>
             </line>
           </reporter-output>
         </test-method> <!-- homePage -->
-        <test-method status="PASS" signature="closeApplication()[pri:0, instance:testCases.homePageTest@6737fd8f]" name="closeApplication" is-config="true" duration-ms="342" started-at="2021-02-11T20:04:47 IST" finished-at="2021-02-11T20:04:47 IST">
+        <test-method status="PASS" signature="closeApplication()[pri:0, instance:testCases.homePageTest@694e1548]" name="closeApplication" is-config="true" duration-ms="406" started-at="2021-02-23T18:57:08 IST" finished-at="2021-02-23T18:57:09 IST">
           <reporter-output>
             <line>
               <![CDATA[=====Browser Session End=====]]>
             </line>
           </reporter-output>
         </test-method> <!-- closeApplication -->
-        <test-method status="PASS" signature="Initializebrowser()[pri:0, instance:testCases.homePageTest@6737fd8f]" name="Initializebrowser" is-config="true" duration-ms="1706" started-at="2021-02-11T20:04:47 IST" finished-at="2021-02-11T20:04:49 IST">
+        <test-method status="PASS" signature="Initializebrowser()[pri:0, instance:testCases.homePageTest@694e1548]" name="Initializebrowser" is-config="true" duration-ms="1886" started-at="2021-02-23T18:57:09 IST" finished-at="2021-02-23T18:57:11 IST">
           <reporter-output>
             <line>
               <![CDATA[=====Browser Session Started=====]]>
             </line>
           </reporter-output>
         </test-method> <!-- Initializebrowser -->
-        <test-method status="PASS" signature="uitest()[pri:0, instance:testCases.homePageTest@6737fd8f]" name="uitest" duration-ms="8283" started-at="2021-02-11T20:04:49 IST" finished-at="2021-02-11T20:04:57 IST">
+        <test-method status="PASS" signature="uitest()[pri:0, instance:testCases.homePageTest@694e1548]" name="uitest" duration-ms="10311" started-at="2021-02-23T18:57:11 IST" finished-at="2021-02-23T18:57:21 IST">
           <reporter-output>
             <line>
-              <![CDATA[===checking the color of 'Explore All Offers button' in the home page as per specifications or not===]]>
+              <![CDATA[***checking the color of 'Explore All Offers button' in the home page as per specifications or not***]]>
             </line>
             <line>
-              <![CDATA[===The color of 'Explore All Offers button' in the home page is as per specification===]]>
+              <![CDATA[***The color of 'Explore All Offers button' in the home page is as per specification***]]>
             </line>
           </reporter-output>
         </test-method> <!-- uitest -->
-        <test-method status="PASS" signature="closeApplication()[pri:0, instance:testCases.homePageTest@6737fd8f]" name="closeApplication" is-config="true" duration-ms="2169" started-at="2021-02-11T20:04:57 IST" finished-at="2021-02-11T20:04:59 IST">
+        <test-method status="PASS" signature="closeApplication()[pri:0, instance:testCases.homePageTest@694e1548]" name="closeApplication" is-config="true" duration-ms="543" started-at="2021-02-23T18:57:21 IST" finished-at="2021-02-23T18:57:21 IST">
           <reporter-output>
             <line>
               <![CDATA[=====Browser Session End=====]]>
             </line>
           </reporter-output>
         </test-method> <!-- closeApplication -->
-        <test-method status="PASS" signature="Initializebrowser()[pri:0, instance:testCases.homePageTest@6737fd8f]" name="Initializebrowser" is-config="true" duration-ms="1715" started-at="2021-02-11T20:04:59 IST" finished-at="2021-02-11T20:05:01 IST">
+        <test-method status="PASS" signature="Initializebrowser()[pri:0, instance:testCases.homePageTest@694e1548]" name="Initializebrowser" is-config="true" duration-ms="2030" started-at="2021-02-23T18:57:21 IST" finished-at="2021-02-23T18:57:23 IST">
           <reporter-output>
             <line>
               <![CDATA[=====Browser Session Started=====]]>
             </line>
           </reporter-output>
         </test-method> <!-- Initializebrowser -->
-        <test-method status="PASS" signature="footerlinks()[pri:1, instance:testCases.homePageTest@6737fd8f]" name="footerlinks" duration-ms="14218" started-at="2021-02-11T20:05:01 IST" finished-at="2021-02-11T20:05:15 IST">
+        <test-method status="PASS" signature="footerlinks()[pri:1, instance:testCases.homePageTest@694e1548]" name="footerlinks" duration-ms="20216" started-at="2021-02-23T18:57:23 IST" finished-at="2021-02-23T18:57:44 IST">
           <reporter-output>
             <line>
-              <![CDATA[===checking the footer links are broken or not===]]>
+              <![CDATA[***checking the footer links are broken or not***]]>
             </line>
           </reporter-output>
         </test-method> <!-- footerlinks -->
-        <test-method status="PASS" signature="closeApplication()[pri:0, instance:testCases.homePageTest@6737fd8f]" name="closeApplication" is-config="true" duration-ms="152" started-at="2021-02-11T20:05:15 IST" finished-at="2021-02-11T20:05:15 IST">
+        <test-method status="PASS" signature="closeApplication()[pri:0, instance:testCases.homePageTest@694e1548]" name="closeApplication" is-config="true" duration-ms="621" started-at="2021-02-23T18:57:44 IST" finished-at="2021-02-23T18:57:44 IST">
           <reporter-output>
             <line>
               <![CDATA[=====Browser Session End=====]]>

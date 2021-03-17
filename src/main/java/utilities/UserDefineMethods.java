@@ -1,7 +1,9 @@
 package utilities;
 
 import java.util.List;
+import org.testng.Reporter;
 import org.openqa.selenium.WebElement;
+
 
 public class UserDefineMethods {
 	
@@ -43,7 +45,7 @@ public class UserDefineMethods {
 		 }
 	
 	}
-	System.out.println("date is not avilable");
+	Reporter.log("***the flight is not avaialable on that date***", true);
 	return null;
 	
 }

@@ -14,17 +14,27 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class webdriverwaits {
 	
 	
-    private static final int TIMEOUT = 30;
-    private static final int POLLING = 100;
+	 private static final int TIMEOUT = 10; 
 
-    protected WebDriver driver;
-    private WebDriverWait wait;
+	    private static final int POLLING = 100; 
 
-    public  webdriverwaits(WebDriver driver) {
-        this.driver = driver;
-        wait = new WebDriverWait(driver,TIMEOUT, POLLING);
-        PageFactory.initElements(new AjaxElementLocatorFactory(driver, TIMEOUT), this);
-    }
+	 
+
+	    protected WebDriver driver; 
+
+	    private WebDriverWait wait; 
+
+	 
+
+	    public  webdriverwaits(WebDriver driver) { 
+
+	        this.driver = driver; 
+
+	        wait = new WebDriverWait(driver, TIMEOUT, POLLING); 
+
+	        PageFactory.initElements(new AjaxElementLocatorFactory(driver, TIMEOUT), this); 
+
+	    } 
     
    
     public void waitForElementVisible(WebElement element) {
